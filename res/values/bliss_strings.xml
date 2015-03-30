@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
-     Copyright (C) 2016 Desolation Rom
+<!-- Copyright (C) 2012-2014 Resurrection Remix ROM Project
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
+
           http://www.apache.org/licenses/LICENSE-2.0
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -13,16 +15,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Color Picker -->
-    <string name="dialog_color_picker_title">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="palette_material_title">Material</string>
-    <string name="palette_rgb_title">RGB</string>
-    <string name="reset_android_title">Android default</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
+    <string name="status_bar_deso_logo_color">Desolation Logo Color</string>
 
 </resources>
