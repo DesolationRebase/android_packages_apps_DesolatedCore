@@ -5,7 +5,7 @@
 	android:layout_height="fill_parent"
 	android:orientation="vertical"
 	android:gravity="center"
-	android:background="@android:color/black">
+	android:background="@color/drawer_header_background_color">
 
 		<ImageView
 			android:layout_height="75px"
@@ -13,7 +13,6 @@
 			android:src="@drawable/ic_deso_settings"/>
 
 	<TextView
-		android:background="#67000000"
 		android:padding="3dp"
 		android:id="@+id/textviewName"
 		android:layout_height="wrap_content"
