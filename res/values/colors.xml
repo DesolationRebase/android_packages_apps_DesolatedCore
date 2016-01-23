@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<color name="navigationBarColor">#000000</color>
-	<color name="windowBackground">#000000</color>
+	<color name="windowBackground">#FFFFFF</color>
 	<color name="textColorPrimary">#000000</color>
+	<color name="textColorSecondary">#FFFFFF</color>
 	<color name="accent">#009688</color>
 	<color name="primary">#263238</color>
 	<color name="primaryDark">#21272b</color>

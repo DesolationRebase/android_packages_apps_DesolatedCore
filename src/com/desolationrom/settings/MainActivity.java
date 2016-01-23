@@ -98,6 +98,7 @@ public class MainActivity extends Activity
 			setTitle(mFragmentNames[position]);
 			mDrawerLayout.closeDrawer(mDrawerList);
 		} catch (Exception x) {
+			x.printStackTrace();
 			Toast.makeText(this, x.getMessage(), Toast.LENGTH_SHORT).show();
 		}
 	}
