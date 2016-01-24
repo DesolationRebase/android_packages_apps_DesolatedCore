@@ -20,14 +20,14 @@ public class MainActivity extends Activity
 	private boolean virgin = true; // Was the Drawer touched yet?
 	private StableArrayAdapter mDrawerAdapter;
 	private int[] icons = {
-		R.drawable.ic_nav_home,
 		R.drawable.ic_statusbar,
+		R.drawable.ic_nav_home,
+		R.drawable.ic_recents,
 		R.drawable.ic_lock_screen,
 		R.drawable.ic_display,
-		R.drawable.ic_battery,
-		R.drawable.ic_recents,
-		R.drawable.ic_sound,
 		R.drawable.ic_buttons,
+		R.drawable.ic_battery,
+		R.drawable.ic_sound,
 		R.drawable.ic_extras,
 		R.drawable.ic_ota
 	};

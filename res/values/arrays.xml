@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string-array name="dashboard_fragment_names">
-		<item>Navigation</item>
 		<item>Status Bar</item>
+		<item>Navigation</item>
+		<item>Recents</item>
 		<item>Lock Screen</item>
 		<item>Display</item>
-		<item>Battery</item>
-		<item>Recents</item>
-		<item>Sounds</item>
 		<item>Buttons</item>
+		<item>Battery</item>
+		<item>Sounds</item>
 		<item>Extras</item>
 		<item>Desolated OTA</item>
 	</string-array>
 	
 	<string-array name="dashboard_fragment_values">
-		<item>NavBar</item>
 		<item>StatusBar</item>
+		<item>NavBar</item>
+		<item>Recents</item>
 		<item>LockScreen</item>
 		<item>Display</item>
-		<item>Battery</item>
-		<item>Recents</item>
-		<item>Sound</item>
 		<item>Button</item>
+		<item>Battery</item>
+		<item>Sound</item>
 		<item>Extras</item>
 		<item>OTA</item>
 	</string-array>
