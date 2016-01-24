@@ -10,6 +10,7 @@
 		<item>Sounds</item>
 		<item>Buttons</item>
 		<item>Desolated OTA</item>
+		<item>Test</item>
 	</string-array>
 	
 	<string-array name="dashboard_fragment_values">
@@ -22,5 +23,6 @@
 		<item>Sound</item>
 		<item>Button</item>
 		<item>OTA</item>
+		<item>Test</item>
 	</string-array>
 </resources>
