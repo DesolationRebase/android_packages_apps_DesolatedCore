@@ -28,13 +28,14 @@ public class MainActivity extends Activity
 		R.drawable.ic_recents,
 		R.drawable.ic_sound,
 		R.drawable.ic_buttons,
+		R.drawable.ic_extras,
 		R.drawable.ic_ota
 	};
-	
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-		
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
 		Fragment fragment = new DefaultFragment();

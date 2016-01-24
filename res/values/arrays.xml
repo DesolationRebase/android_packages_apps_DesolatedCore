@@ -9,6 +9,7 @@
 		<item>Recents</item>
 		<item>Sounds</item>
 		<item>Buttons</item>
+		<item>Extras</item>
 		<item>Desolated OTA</item>
 	</string-array>
 	
@@ -21,6 +22,7 @@
 		<item>Recents</item>
 		<item>Sound</item>
 		<item>Button</item>
+		<item>Extras</item>
 		<item>OTA</item>
 	</string-array>
 </resources>
