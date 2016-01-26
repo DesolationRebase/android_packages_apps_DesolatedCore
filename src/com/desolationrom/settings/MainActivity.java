@@ -64,6 +64,8 @@ public class MainActivity extends Activity
 		View headerView = LayoutInflater.from(this).inflate(R.layout.drawer_header, null);
 		((TextView) headerView.findViewById(R.id.textviewName)).setText("Desolated Core");
 		mDrawerList.addHeaderView(headerView);
+		setTitle(R.string.app_name);
+
     }
 	
 	private class DrawerItemClickListener implements ListView.OnItemClickListener {
@@ -165,4 +167,9 @@ public class MainActivity extends Activity
 			return v;
 		}
 	}
+
+        @Override
+        protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
 }

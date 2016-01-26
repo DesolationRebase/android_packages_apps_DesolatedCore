@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Desolated Core</string>
+
+    <!--Time Contexual Header -->
+    <string name="status_bar_custom_header_title">Time Contextual Header</string>
+    <string name="status_bar_custom_header_summary">Enable notification panel header image</string>
+
+    <!--Time Contexual Images -->
+    <string name="status_bar_custom_header_image_title">Header Image</string>
+    <string name="status_bar_custom_header_image_summary">Pick image to show in header (use 1200x192 for best results)</string>
+    <string name="status_bar_custom_header_image_clear_title">Clear Header Image</string>
+
+    <!--Deso Logo -->
+    <string name="status_bar_deso_logo_title">Desolation Logo</string>
+    <string name="status_bar_deso_logo_summary">Show Desolation logo in status bar</string>
 </resources>
