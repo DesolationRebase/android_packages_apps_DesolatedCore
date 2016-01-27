@@ -2,6 +2,7 @@
 <resources>
 	<string-array name="dashboard_fragment_names">
 		<item>Status Bar</item>
+		<item>Notification Drawer</item>
 		<item>Navigation</item>
 		<item>Recents</item>
 		<item>Lock Screen</item>
@@ -15,6 +16,7 @@
 	
 	<string-array name="dashboard_fragment_values">
 		<item>StatusBar</item>
+		<item>NotificationDrawer</item>
 		<item>NavBar</item>
 		<item>Recents</item>
 		<item>LockScreen</item>

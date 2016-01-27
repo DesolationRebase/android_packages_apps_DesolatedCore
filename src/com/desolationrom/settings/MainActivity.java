@@ -32,6 +32,7 @@ public class MainActivity extends Activity
 	private StableArrayAdapter mDrawerAdapter;
 	private int[] icons = {
 		R.drawable.ic_statusbar,
+		R.drawable.ic_notif,
 		R.drawable.ic_nav_home,
 		R.drawable.ic_recents,
 		R.drawable.ic_lock_screen,
