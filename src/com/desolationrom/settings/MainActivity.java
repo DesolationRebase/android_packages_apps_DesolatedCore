@@ -67,7 +67,7 @@ public class MainActivity extends Activity
 		setTitle(R.string.app_name);
 
     }
-	
+
 	private class DrawerItemClickListener implements ListView.OnItemClickListener {
 		@Override
 		public void onItemClick(AdapterView<?> adapter, View view, int position, long s)
@@ -122,7 +122,7 @@ public class MainActivity extends Activity
 		mTitle = title.toString();
 		getActionBar().setTitle(mTitle);
 	}
-	
+
 	private class StableArrayAdapter extends ArrayAdapter < String > {
 
 		HashMap < String, Integer > mIdMap = new HashMap < String, Integer > ();

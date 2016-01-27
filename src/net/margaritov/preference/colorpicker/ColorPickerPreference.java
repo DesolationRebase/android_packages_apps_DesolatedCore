@@ -30,7 +30,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.android.settings.R;
+import com.desolationrom.settings.R;
 
 /**
  * A preference type that allows a user to choose a time
@@ -90,7 +90,7 @@ public class ColorPickerPreference extends Preference implements
                     mDefaultValue = context.getResources().getInteger(resourceId);
                 }
             }
-            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", false);
+            mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", true);
         }
         mValue = mDefaultValue;
     }
