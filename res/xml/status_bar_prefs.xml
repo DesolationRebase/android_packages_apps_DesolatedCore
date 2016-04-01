@@ -3,6 +3,58 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
+    <PreferenceCategory
+        android:key="carrier_label_cat_main"
+        android:title="@string/carrier_name">
+
+        <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
+            android:key="status_bar_carrier_label_show"
+            android:title="@string/carrier_label_show_title"
+            android:summary="@string/carrier_label_show_summary"
+            android:persistent="false" />
+
+        <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
+            android:key="status_bar_carrier_label_show_on_lock_screen"
+            android:title="@string/carrier_label_show_on_lock_screen_title"
+            android:summary="@string/carrier_label_show_on_lock_screen_summary"
+            android:persistent="false" />
+
+        <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
+            android:key="status_bar_carrier_label_use_custom"
+            android:title="@string/carrier_label_use_custom_title"
+            android:summary="@string/carrier_label_use_custom_summary"
+            android:persistent="false" />
+
+        <EditTextPreference
+            android:key="carrier_label_custom_label"
+            android:title="@string/carrier_label_custom_label_title"
+            android:dialogMessage="@string/carrier_label_custom_label_dlg_message" />
+
+        <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
+            android:key="status_bar_carrier_label_hide_label"
+            android:title="@string/carrier_label_hide_label_title"
+            android:summary="@string/carrier_label_hide_label_summary"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="carrier_label_number_of_notification_icons"
+            android:title="@string/carrier_label_number_of_notification_icons_title"
+            android:entries="@array/number_of_notifications_entries"
+            android:entryValues="@array/number_of_notifications_values" />
+
+         <net.margaritov.preference.colorpicker.ColorPickerPreference
+            android:key="carrier_label_color"
+            android:title="@string/text_title"
+            android:defaultValue="0xffffffff" />
+
+        <EditTextPreference
+            android:key="qs_carrier_label_custom_label"
+            android:title="@string/qs_carrier_label_title"
+            android:summary="@string/qs_carrier_label_summary"
+            android:dialogMessage="@string/qs_carrier_label_custom_label_dlg_message" />
+
+    </PreferenceCategory>
+
     <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
@@ -35,9 +87,9 @@
         android:summary="@string/status_bar_deso_logo_summary" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
-            android:key="status_bar_deso_logo_color"
-            android:title="@string/status_bar_deso_logo_color"
-            android:defaultValue="0xffffffff"
-            android:dependency="status_bar_deso_logo" />
+        android:key="status_bar_deso_logo_color"
+        android:title="@string/status_bar_deso_logo_color"
+        android:defaultValue="0xffffffff"
+        android:dependency="status_bar_deso_logo" />
 
 </PreferenceScreen>

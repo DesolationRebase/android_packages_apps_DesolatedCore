@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
 	private SoundFragment so = new SoundFragment();
 	private ExtrasFragment e = new ExtrasFragment();
 	private OTAFragment o = new OTAFragment();
+        private StatusBarCarrierLabelSettings sb = new StatusBarCarrierLabelSettings();
 
 	private ActionBarDrawerToggle mDrawerToggle;
 	private String mTitle;
