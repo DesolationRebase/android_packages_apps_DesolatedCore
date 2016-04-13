@@ -18,4 +18,10 @@
     <string name="show_charging_mah_title">Charging Speed Display</string>
     <string name="show_charging_mah_summary">Show charging speed on lock screen</string>
 
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+
+    <string name="status_bar_clock_use_seconds_title">Seconds</string>
+    <string name="status_bar_clock_use_seconds_summary">Show seconds on the status bar clock</string>
+
 </resources>

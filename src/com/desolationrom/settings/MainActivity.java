@@ -3,15 +3,16 @@ package com.desolationrom.settings;
 import android.app.*;
 import android.os.*;
 import android.support.v4.widget.*;
+import android.support.v4.app.ActionBarDrawerToggle;
 import android.widget.*;
+import android.content.res.Configuration;
 import java.util.*;
 import android.view.*;
 import java.lang.reflect.*;
 import android.content.*;
 import com.desolationrom.settings.fragments.*;
 
-public class MainActivity extends Activity 
-{
+public class MainActivity extends Activity {
 	private StatusBarFragment s =  new StatusBarFragment();
 	private NavBarFragment n = new NavBarFragment();
 	private RecentsFragment r = new RecentsFragment();
@@ -23,6 +24,7 @@ public class MainActivity extends Activity
 	private ExtrasFragment e = new ExtrasFragment();
 	private OTAFragment o = new OTAFragment();
 
+	private ActionBarDrawerToggle mDrawerToggle;
 	private String mTitle;
 	private String[] mFragmentNames, mFragmentValues;
 	private DrawerLayout mDrawerLayout;
@@ -58,14 +60,39 @@ public class MainActivity extends Activity
 		mFragmentNames = getResources().getStringArray(R.array.dashboard_fragment_names);
 		mFragmentValues = getResources().getStringArray(R.array.dashboard_fragment_values);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+		mDrawerList = (ListView) findViewById(R.id.left_drawer);
 		mDrawerAdapter = new StableArrayAdapter(this, R.layout.drawer_list_item, mFragmentNames);
-        mDrawerList.setAdapter(mDrawerAdapter);
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+		mDrawerList.setAdapter(mDrawerAdapter);
+		mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 		View headerView = LayoutInflater.from(this).inflate(R.layout.drawer_header, null);
 		((TextView) headerView.findViewById(R.id.textviewName)).setText("Desolated Core");
 		mDrawerList.addHeaderView(headerView);
 		setTitle(R.string.app_name);
+
+
+		mDrawerToggle = new ActionBarDrawerToggle(
+                this,                  /* host Activity */
+                mDrawerLayout,         /* DrawerLayout object */
+                R.drawable.ic_drawer,  /* nav drawer icon to replace 'Up' caret */
+                R.string.drawer_open,  /* "open drawer" description */
+                R.string.drawer_close  /* "close drawer" description */
+                ) {
+
+            /** Called when a drawer has settled in a completely closed state. */
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+            }
+
+            /** Called when a drawer has settled in a completely open state. */
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+            }
+        };
+// Set the drawer toggle as the DrawerListener
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
 
     }
 
@@ -173,4 +200,29 @@ public class MainActivity extends Activity
         protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             super.onActivityResult(requestCode, resultCode, data);
         }
+
+ @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        // Sync the toggle state after onRestoreInstanceState has occurred.
+        mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle, if it returns
+        // true, then it has handled the app icon touch event
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+          return true;
+        }
+        // Handle your other action bar items...
+
+        return super.onOptionsItemSelected(item);
+    }
 }
