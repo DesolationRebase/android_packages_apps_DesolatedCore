@@ -14,4 +14,8 @@
     <!--Deso Logo -->
     <string name="status_bar_deso_logo_title">Desolation Logo</string>
     <string name="status_bar_deso_logo_summary">Show Desolation logo in status bar</string>
+
+    <string name="show_charging_mah_title">Charging Speed Display</string>
+    <string name="show_charging_mah_summary">Show charging speed on lock screen</string>
+
 </resources>
