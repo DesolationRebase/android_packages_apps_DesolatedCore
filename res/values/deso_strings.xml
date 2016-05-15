@@ -34,4 +34,10 @@
     <string name="status_bar_brightness_control_title">Status bar brightness controll</string>
     <string name="status_bar_brightness_control_summary">Slide left and right across the status bar to change brigtness</string>
 
+    <string name="welcome_back_notify_title">Welcome Back notification</string>
+    <string name="welcome_back_notify_summary">Greet the user with a notification after boot</string>
+
+    <string name="first_boot_notify_title">First Boot notification</string>
+    <string name="first_boot_notify_summary">Show notification about ROM on boot after an update</string>
+
 </resources>
