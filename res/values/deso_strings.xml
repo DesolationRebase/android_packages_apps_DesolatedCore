@@ -31,4 +31,7 @@
     <string name="double_tap_sleep_gesture_title">Double Tap to Sleep</string>
     <string name="double_tap_sleep_gesture_summary">Double tap on the status bar to turn the screen off</string>
 
+    <string name="status_bar_brightness_control_title">Status bar brightness controll</string>
+    <string name="status_bar_brightness_control_summary">Slide left and right across the status bar to change brigtness</string>
+
 </resources>
