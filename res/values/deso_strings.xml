@@ -25,4 +25,7 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
 
+    <string name="volbtn_music_controls_title">Volume Button Playback Control</string>
+    <string name="volbtn_music_controls_summary">Press volume up for next track and down for previous</string>
+
 </resources>
