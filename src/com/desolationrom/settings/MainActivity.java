@@ -13,18 +13,6 @@ import android.content.*;
 import com.desolationrom.settings.fragments.*;
 
 public class MainActivity extends Activity {
-	private StatusBarFragment s =  new StatusBarFragment();
-	private NavBarFragment n = new NavBarFragment();
-	private RecentsFragment r = new RecentsFragment();
-	private LockScreenFragment l = new LockScreenFragment();
-	private DisplayFragment d = new DisplayFragment();
-	private ButtonFragment b = new ButtonFragment();
-	private BatteryFragment ba = new BatteryFragment();
-	private SoundFragment so = new SoundFragment();
-	private ExtrasFragment e = new ExtrasFragment();
-	private OTAFragment o = new OTAFragment();
-        private StatusBarCarrierLabelSettings sb = new StatusBarCarrierLabelSettings();
-
 	private ActionBarDrawerToggle mDrawerToggle;
 	private String mTitle;
 	private String[] mFragmentNames, mFragmentValues;

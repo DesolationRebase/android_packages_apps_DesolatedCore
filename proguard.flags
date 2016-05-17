@@ -1,0 +1,2 @@
+-keep class com.desolationrom.settings.fragments.** { *; }
+-keep class com.desolationrom.settings.widgets.** { *; }
