@@ -9,11 +9,6 @@
 -->
 
     <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
-        android:key="first_boot_notify"
-        android:title="@string/first_boot_notify_title"
-        android:summary="@string/first_boot_notify_summary" />
-
-    <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
         android:key="welcome_back_notify"
         android:title="@string/welcome_back_notify_title"
         android:summary="@string/welcome_back_notify_summary" />
