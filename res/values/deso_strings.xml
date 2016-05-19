@@ -40,4 +40,7 @@
     <string name="first_boot_notify_title">First Boot notification</string>
     <string name="first_boot_notify_summary">Show notification about ROM on boot after an update</string>
 
+    <string name="recents_show_search_bar_title">Search Bar in Recents</string>
+    <string name="recents_show_search_bar_summary">Wether to show the search bar in the recents app screen</string>
+
 </resources>
