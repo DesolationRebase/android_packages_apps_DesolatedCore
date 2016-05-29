@@ -13,4 +13,20 @@
         android:title="@string/welcome_back_notify_title"
         android:summary="@string/welcome_back_notify_summary" />
 
+    <PreferenceCategory
+        android:key="screenshot"
+        android:title="@string/category_screenshot">
+
+    <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
+        android:key="screenshot_crop_and_share"
+        android:title="@string/screenshot_crop_and_share_enable_title"
+        android:summary="@string/screenshot_crop_and_share_enable_summary" />
+
+    <com.desolationrom.settings.widgets.SystemSettingSwitchPreference
+        android:key="screenshot_crop_behavior"
+        android:title="@string/pref_crop_behavior_title"
+        android:summary="@string/pref_crop_behavior_summary" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
