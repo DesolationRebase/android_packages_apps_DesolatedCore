@@ -10,7 +10,7 @@ public class NotificationDrawerFragment extends PreferenceFragment
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 	{
-		addPreferencesFromResource(R.xml.extras_prefs);
+		addPreferencesFromResource(R.xml.notificationdrawer_prefs);
 		return super.onCreateView(inflater, container, savedInstanceState);
 	}
 }
